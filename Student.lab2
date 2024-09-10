@@ -1,0 +1,62 @@
+
+package student;
+
+public class Student {
+    
+ String name ,department;
+ int id;
+ double cgpa;
+ 
+    
+    static String university="ULAB";
+    
+    static int count=0;
+    
+    
+public Student( String name,int id,String department,double cgpa ){
+    
+    this.name=name;
+    this.id=id;
+    this.department=department;
+    this.cgpa=cgpa;
+    
+    count++;
+}
+    
+    
+ public void studentInfo() {
+     
+   System.out.println("Name:"+name); 
+   System.out.println("ID:"+id); 
+   System.out.println("Deppartment:"+department); 
+   System.out.println("Result:"+cgpa); 
+   System.out.println("University:"+university); 
+     
+ }  
+    
+ public static void displayTotalStudents() {
+     String Count = null;
+        System.out.println("Total number of students: " +Count);
+    }   
+    
+    
+    
+
+    
+    public static void main(String[] args) {
+        
+    Student  s1=new Student ("shahin",223,"cSE",3.50) ;   
+    Student  s2=new Student ("Zarif",224,"cSE",3.30) ;
+    Student  s3=new Student ("Umme",222,"EEE",2.98) ;
+    
+    s1.studentInfo();
+    System.out.println();
+ 
+    s2.studentInfo();
+     System.out.println();
+    s3.studentInfo();
+    
+    
+    }
+    
+}
